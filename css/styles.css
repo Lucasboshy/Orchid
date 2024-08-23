@@ -1,0 +1,203 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset de css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jost;
+}
+
+/* Logo de la pagina*/
+
+.top img {
+    width: 200px;
+    background-color: #C47AC0;
+}
+
+.top {
+    background-color: #C47AC0;
+}
+
+/* Barra de búsqueda */
+
+.top input {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+/* Menu */
+
+.menuBusqueda {
+    background-color: #E39EC1;
+    border: 2px;
+    border-style: solid;
+}
+
+.menuBusqueda ul {
+    padding: 20px;
+    text-align: center;
+}
+
+.menuBusqueda ul li{
+    font-weight: 700;
+    display: inline;
+    margin-left: 40px;
+}
+
+.menuBusqueda ul li a{
+    text-decoration: none;
+    border: 3px;
+    border-radius: 30px;
+    border-style: groove;
+    padding: 5px;
+}
+
+/* Destacado */
+
+.textoDestacado {
+    text-align: center;
+    background-color: #C47AC0;
+}
+
+.destacado {
+    background-color: #77567a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destacado img {
+    width: 40%;
+    margin: auto;
+}
+
+.destacado div {
+    text-align: center;
+    color: #debac0;
+}
+
+.destacado div h1{
+    color: #e39ec1;
+    font-size: 30px;
+}
+
+/* Productos */
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.productos div img {
+    width: 170px;
+    height: 170px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.productos div p {
+    font-size: large;
+    text-align: center;
+}
+
+/* Footer */
+
+.quienesSomos {
+    text-align: center;
+    background-color: #77567a;
+}
+
+.quienesSomos h1 {
+    font-size: 40px;
+}
+
+.iframe {
+    background-color: #77567a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redesSociales img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Secciones */
+
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalogo img{
+    width: 10vw;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: hotpink;
+    float: left;
+    width: 20vw;
+    height: 60vw;
+}
+
+.rostro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rostro img {
+    width: 10vw;
+    border: 3px;
+    border-color: #C47AC0;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+/* Contacto */
+
+.contactar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #77567a;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+}
