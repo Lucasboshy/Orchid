@@ -15,78 +15,25 @@
 
 .top img {
     width: 200px;
-    background-color: #C47AC0;
+    background-color: #ffffff;
 }
 
 .top {
-    background-color: #C47AC0;
+    background-color: #ffffff;
 }
 
-/* Barra de búsqueda */
+/* Navbar */
 
-.top input {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px black;
-    position: absolute;
-    left: 40%;
-    top: 10%;
-}
-
-/* Menu */
-
-.menuBusqueda {
-    background-color: #E39EC1;
-    border: 2px;
-    border-style: solid;
-}
-
-.menuBusqueda ul {
-    padding: 20px;
-    text-align: center;
-}
-
-.menuBusqueda ul li{
-    font-weight: 700;
-    display: inline;
-    margin-left: 40px;
-}
-
-.menuBusqueda ul li a{
-    text-decoration: none;
-    border: 3px;
-    border-radius: 30px;
-    border-style: groove;
-    padding: 5px;
+header nav{
+    background-color: #b7b7b7;
 }
 
 /* Destacado */
 
 .textoDestacado {
     text-align: center;
-    background-color: #C47AC0;
-}
-
-.destacado {
-    background-color: #77567a;
-    display: flex;
-    justify-content: space-between;
-}
-
-.destacado img {
-    width: 40%;
-    margin: auto;
-}
-
-.destacado div {
-    text-align: center;
-    color: #debac0;
-}
-
-.destacado div h1{
-    color: #e39ec1;
-    font-size: 30px;
+    background-color: #ffffff;
+    font-style: italic;
 }
 
 /* Productos */
@@ -94,7 +41,9 @@
 .productos {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    border: 30px;
+    border-style: solid;
+    border-color: #ffffff;
 }
 
 .productos div img {
@@ -110,94 +59,138 @@
     text-align: center;
 }
 
+
 /* Footer */
 
-.quienesSomos {
-    text-align: center;
-    background-color: #77567a;
+footer img{
+    width: 3vw;
+    margin: 2px;
 }
 
-.quienesSomos h1 {
-    font-size: 40px;
+footer {
+    background-color: rgba(94, 94, 94, 0.682);
 }
 
-.iframe {
-    background-color: #77567a;
+footer a{
+    text-decoration: none;
+    color: #b7b7b7;
+}
+
+footer a:hover{
+    color: #c6c0c0;
+}
+
+.soporte {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.iframe h1{
+/* --- Hombres --- */
+
+/* Catalogo */
+
+.catalogo{
     text-align: center;
-    font-size: 40px;
 }
 
-.redesSociales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.redesSociales img {
-    width: 60px;
-    height: 60px;
-}
-
-/* Secciones */
-
-.catalogo {
-    display: flex;
-    justify-content: space-around;
-}
-
-.catalogo img{
-    width: 10vw;
+.catalogoTitulo{
+    border-radius: 2px;
     border: 2px;
     border-style: solid;
-    border-radius: 5px;
-    margin: 3px;
+    border-color: rgb(109, 109, 109);
+    margin: 20px;
 }
 
-.filter {
+/* --- Mujeres --- */
+
+.catalogoMujeres{
+    text-align: center;
+}
+
+.catalogoMujeres img{
+    margin: 20px;
+}
+
+/* --- Contacto --- */
+
+.contactoMain {
+    margin-bottom: 10px;
+    background-color: #8e8e8e;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: hotpink;
-    float: left;
-    width: 20vw;
-    height: 60vw;
 }
 
-.rostro {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contactoMain label{
+    font-size: 20px;
+    margin: 10px;
 }
 
-.rostro img {
-    width: 10vw;
-    border: 3px;
-    border-color: #C47AC0;
-    border-style: solid;
-    border-radius: 10px;
+.btn-primary{
+    margin: 10px;
 }
 
-/* Contacto */
-
-.contactar {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #77567a;
-    text-align: center;
-    border-radius: 20px;
+.btn-primary:hover{
+    color: yellow;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 20vw;
-    height: 20vw;
+/* --- Medias --- */
+
+/* Media Tableta -768px segun Edge */
+
+@media (max-width:769px) {
+
+    .redesSociales img{
+        width: 50px;
+    }
+    .productos div img {
+        width: 150px;
+        height: 150px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+}
+
+/* Media Móvil L - 425px segun Edge */
+
+@media (max-width:426px) {
+    
+    .redesSociales img{
+        width: 30px;
+    }
+    .productos div img {
+        width: 80px;
+        height: 80px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+}
+
+/* Media Móvil M - 375px segun Edge */
+
+@media (max-width:375px) {
+    .productos div img {
+        width: 50px;
+        height: 50px;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+    .productos div p{
+        font-size: small;
+    }
+}
+
+/* Media Móvil S - 320px segun Edge -SIN USAR TODAVIA.- */
+
+/* Media Portátil - 1024px */
+
+@media (max-width:1025px) {
+    iframe {
+        width: 200px;
+    }
+    footer img{
+        width: 30px;
+    }
 }

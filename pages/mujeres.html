@@ -1,73 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/orchid-yy1.png">
     <title>Orchid - Mujeres</title>
 </head>
+
 <body>
     <header>
         <div class="top">
             <a href="../index.html"><img src="../assets/logo.png" alt="logomarca"></a>
-            <input type="Busca" placeholder="Búsca dentro del catalogo">
         </div>
-        <nav class="menuBusqueda">
-            <ul>
-                <li><a href="../index.html">Volver al inicio</a></li>
-                <li><a href="./hombres.html">Hombres</a></li>
-                <li><a href="#">Mujeres</a></li>
-                <li><a href="./rostro.html">Rostro</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Volver al inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hombres.html">Hombres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mujeres.html">Mujeres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rostro.html">Rostro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="..." aria-label="Búscar">
+                        <button class="btn btn-outline-success" type="submit">Búscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <!-- Aca iria como una especie de filtro de los productos que habria -->
-        <section class="catalogo">
-            <div class="filter">
-                <h1>Filtro</h1>
-                <input type="text" placeholder="Nombre del producto">
-                <p>Test <input type="checkbox"></p>
-                <p>Test <input type="checkbox"></p>
-                <p>Test <input type="checkbox"></p>
-                <button>Aplicar</button>
+        <div class="container">
+            <div class="row catalogoMujeres">
+                <div class="col-md-5 col-lg-4">
+                    <h1>Catalogo</h1>
+                    <img src="../assets/test.jpg" alt="test">
+                    <img src="../assets/test.jpg" alt="test">
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <h1>Catalogo</h1>
+                    <img src="../assets/test.jpg" alt="test">
+                    <img src="../assets/test.jpg" alt="test">
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <h1>Catalogo</h1>
+                    <img src="../assets/test.jpg" alt="test">
+                    <img src="../assets/test.jpg" alt="test">
+                </div>
             </div>
-            <div>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <h1>En oferta!</h1>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-                <a href="#"><img src="../assets/test.jpg" alt=""></a>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <div class="quienesSomos">
-            <h1>Quienes somos?</h1>
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores delectus at reprehenderit minus assumenda quibusdam magnam excepturi, neque perspiciatis minima illum sunt repellendus nesciunt consequuntur amet optio fugiat! Reprehenderit, eos.
-            Accusamus ipsa illum molestias sequi quasi. Saepe explicabo soluta esse harum ullam provident facilis vitae quae aliquam tenetur nulla itaque dolore omnis dicta, repudiandae qui incidunt quos accusamus fugit labore!</h2>
-        </div>
-        <div class="iframe">
-            <h1>Donde residimos?</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.468263210295!2d-58.65989502425802!3d-34.642875372940296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf28135f7ac3%3A0x920558887ae17216!2sTorre%20Eiffel%20de%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1722556311611!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <section class="redesSociales">
-            <h1>Redes sociales</h1>
-            <div>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="facebook"></a>
-                <a href="https://x.com/home" target="_blank"><img src="../assets/twitter.png" alt="x"></a>
+    <footer class="container-fluid">
+        <div class="row p-5 text-white">
+            <div class="col-12 col-lg-3">
+                <h2>Quienes somos</h2>
+                <p>Somos una tienda online de productos de belleza como perfumes, cremas, cuidados de la piel, etc</p>
             </div>
-        </section>
+            <div class="col-12 col-lg-3">
+                <h2>Contacto</h2>
+                <p>Numero: 123456789</p>
+                <p>Seguinos en</p>
+                <a href="https://www.facebook.com/"><img src="../assets/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="instagram"></a>
+                <a href="https://x.com/home"><img src="../assets/twitter.png" alt="twitter"></a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <h2>¿Donde residimos?</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.468263210295!2d-58.65989502425802!3d-34.642875372940296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf28135f7ac3%3A0x920558887ae17216!2sTorre%20Eiffel%20de%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1722556311611!5m2!1ses-419!2sar"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="col-12 col-lg-3 soporte">
+                <h2>Soporte</h2>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Reembolsos</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Ayuda</a>
+            </div>
+        </div>
     </footer>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
