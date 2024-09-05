@@ -37,6 +37,7 @@ header nav{
     background-color: #ffffff;
     font-family: Jost;
     font-style: italic;
+    text-shadow: 2px 2px #858585;
 }
 
 /* Productos */
@@ -46,18 +47,21 @@ header nav{
     text-align: center;
     text-decoration: double;
     margin-top: 30px;
+    padding: 20px;
 }
 
 .titleMujeres{
     background-color: #9f65af;
     text-align: center;
     text-decoration: double;
+    padding: 20px;
 }
 
 .titleEstrella{
     background-color: #FC0;
     text-align: center;
     text-decoration: double;
+    padding: 20px;
 }
 
 .productos {
