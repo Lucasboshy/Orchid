@@ -1,6 +1,9 @@
 /* Fuentes */
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 /* Reset de css */
 
@@ -8,7 +11,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Jost;
 }
 
 /* Logo de la pagina*/
@@ -33,33 +35,129 @@ header nav{
 .textoDestacado {
     text-align: center;
     background-color: #ffffff;
+    font-family: Jost;
     font-style: italic;
 }
 
 /* Productos */
 
-.productos {
-    display: flex;
-    justify-content: space-evenly;
-    border: 30px;
-    border-style: solid;
-    border-color: #ffffff;
+.titleHombres{
+    background-color: #65afaa;
+    text-align: center;
+    text-decoration: double;
+    margin-top: 30px;
 }
 
-.productos div img {
+.titleMujeres{
+    background-color: #9f65af;
+    text-align: center;
+    text-decoration: double;
+}
+
+.titleEstrella{
+    background-color: #FC0;
+    text-align: center;
+    text-decoration: double;
+}
+
+.productos {
+    margin: 40px;
+}
+
+.productos img {
     width: 170px;
     height: 170px;
-    border-style: solid;
+    border-radius: 30px;
+}
+
+
+.productos a{
+    text-decoration: none;
+    color: black;
+    background-color: #b7b7b7;
+    padding: 5px;
     border-radius: 5px;
-    border-width: 2px;
+    font-family: Jost;
 }
 
-.productos div p {
-    font-size: large;
+.productos a:hover{
+    color: green;
+}
+
+.productos h3{
+    text-shadow: 1px 2px 3px rgb(129, 127, 127);
+}
+
+.cardPrecio{
+    color: rgb(173, 173, 173);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.cardDescuento{
+    color: green;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+/* Metodos de pago */
+
+.cardPago{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    background-color: #8e8e8e;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.cardPago a{
+    text-decoration: none;
+    color: seashell;
+    background-color: #303030;
+    border: 5px;
+    border-style: solid;
+    border-color: #303030;
+    border-radius: 5px;
+}
 
+.cardPago a:hover{
+    background-color: #545454;
+    border-color: #545454;
+}
+
+.metodosPago{
+    margin: 20px 0 20px 0;
+}
+
+.metodosPago img{
+    width: 100px;
+}
+
+.metodosPago div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Asociados */
+
+.asociados{
+    background-color: #e0a966;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.marcas{
+    display: flex;
+    justify-content: center;
+}
+
+.asociados img{
+    width: 160px;
+}
 /* Footer */
 
 footer img{
@@ -113,11 +211,12 @@ footer a:hover{
 
 /* --- Contacto --- */
 
-.contactoMain {
+.contactoMain{
     margin-bottom: 10px;
     background-color: #8e8e8e;
     display: flex;
     flex-direction: column;
+    font-family: Playfair Display;
 }
 
 .contactoMain label{
@@ -133,49 +232,93 @@ footer a:hover{
     color: yellow;
 }
 
+.preguntasFrecuentes{
+    font-family: Roboto Slab;
+}
+
+.preguntasFrecuentes h1{
+    font-style: italic;
+    color: black;
+}
+
+.preguntasFrecuentes h2{
+    color: white;
+    font-size: large;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.preguntasFrecuentes h3{
+    font-size: medium;
+}
+
+/* --- Nosotros --- */
+
+.titleNosotros{
+    border: 40px;
+    border-style: solid;
+    border-color: #545454;
+    text-align: center;
+    background-color:#545454;
+    margin-bottom: 20px;
+}
+
+.titleNosotros h1{
+    font-size: 40px;
+    color:#bde8de;
+    font-family: Jost;
+}
+
+.titleNosotros h2{
+    font-size: 40px;
+    color:#bde8de;
+    font-family: Jost;
+}
+
+.sectionNosotros p{
+    font-size: 25px;
+    text-align: center;
+    font-family: Jost;
+}
+
+.empleados img{
+    border-radius: 900px;
+}
+
+.fundador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* --- Medias --- */
 
-/* Media Tableta -768px segun Edge */
+/* Media Tableta - 68px segun Edge */
 
 @media (max-width:769px) {
-
     .redesSociales img{
         width: 50px;
     }
     .productos div img {
-        width: 150px;
-        height: 150px;
-        border-style: solid;
-        border-radius: 5px;
-        border-width: 2px;
+        width: 60px;
+        height: 60px;
     }
 }
 
 /* Media Móvil L - 425px segun Edge */
 
 @media (max-width:426px) {
-    
     .redesSociales img{
         width: 30px;
-    }
-    .productos div img {
-        width: 80px;
-        height: 80px;
-        border-style: solid;
-        border-radius: 5px;
-        border-width: 2px;
     }
 }
 
 /* Media Móvil M - 375px segun Edge */
 
 @media (max-width:375px) {
-    .productos div img {
+    .productos img {
         width: 50px;
         height: 50px;
-        border-style: solid;
-        border-radius: 5px;
-        border-width: 2px;
     }
     .productos div p{
         font-size: small;
@@ -194,3 +337,26 @@ footer a:hover{
         width: 30px;
     }
 }
+
+/* Modificación de Bootstrap */
+
+.navbar{
+    font-family: Oswald;
+}
+
+.card{
+    background-color: rgb(219, 216, 216);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(159, 160, 161, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+
+
+
+
