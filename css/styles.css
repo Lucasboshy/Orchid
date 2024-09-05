@@ -153,10 +153,19 @@ header nav{
 .marcas{
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+
+.marcasTitle{
+    padding: 20px;
+    text-decoration: underline;
+    text-shadow: 3px 1px#ebebeb;
 }
 
 .asociados img{
     width: 160px;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 /* Footer */
 
