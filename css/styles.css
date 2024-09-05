@@ -203,6 +203,8 @@ footer a:hover{
 
 .catalogoMujeres{
     text-align: center;
+    border: 2px;
+    border-style: solid;
 }
 
 .catalogoMujeres img{
