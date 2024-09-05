@@ -342,6 +342,11 @@ footer a:hover{
     font-family: Jost;
 }
 
+.blog img{
+    width: 500px;
+    border-radius: 20px;
+}
+
 .blog h2{
     color: #bde8de;
     display: block;
