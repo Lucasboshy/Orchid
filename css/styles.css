@@ -16,14 +16,8 @@
 /* Logo de la pagina*/
 
 .top img {
-    width: 200px;
-    background-color: #ffffff;
+    height: 50px;
 }
-
-.top {
-    background-color: #ffffff;
-}
-
 /* Navbar */
 
 header nav{
@@ -38,6 +32,7 @@ header nav{
     font-family: Jost;
     font-style: italic;
     text-shadow: 2px 2px #858585;
+    padding-top: 70px;
 }
 
 /* Productos */
@@ -202,6 +197,7 @@ footer a:hover{
 
 .catalogo{
     text-align: center;
+    padding-top: 60px;
 }
 
 .catalogoTitulo{
@@ -257,7 +253,8 @@ footer a:hover{
     background-color: #8e8e8e;
     display: flex;
     flex-direction: column;
-    font-family: Playfair Display;
+    font-family: Jost;
+    padding-top: 60px;
 }
 
 .contactoMain label{
@@ -317,6 +314,10 @@ footer a:hover{
     font-family: Jost;
 }
 
+.sectionNosotros{
+    padding-top: 80px;
+}
+
 .sectionNosotros p{
     font-size: 25px;
     text-align: center;
@@ -357,6 +358,13 @@ footer a:hover{
     color: #ffffff;
 }
 
+.titleGratis{
+    background-color: #FC0;
+    text-align: center;
+    text-decoration: double;
+    padding-top: 25px;
+}
+
 .maquillajeTutorial{
     font-family: Jost;
 }
@@ -394,7 +402,18 @@ footer a:hover{
 
 /* --- Medias --- */
 
-/* Media Tableta - 68px segun Edge */
+/* Media Portátil - 1024px */
+
+@media (max-width:1025px) {
+    iframe {
+        width: 200px;
+    }
+    footer img{
+        width: 30px;
+    }
+}
+
+/* Media Tableta - 768px segun Edge */
 
 @media (max-width:769px) {
     .redesSociales img{
@@ -412,11 +431,14 @@ footer a:hover{
     .redesSociales img{
         width: 30px;
     }
+    .blog img{
+        width: 400px;
+    }
 }
 
 /* Media Móvil M - 375px segun Edge */
 
-@media (max-width:375px) {
+@media (max-width:376px) {
     .productos img {
         width: 50px;
         height: 50px;
@@ -424,20 +446,12 @@ footer a:hover{
     .productos div p{
         font-size: small;
     }
+    .blog img{
+        width: 300px;
+    }
 }
 
 /* Media Móvil S - 320px segun Edge -SIN USAR TODAVIA.- */
-
-/* Media Portátil - 1024px */
-
-@media (max-width:1025px) {
-    iframe {
-        width: 200px;
-    }
-    footer img{
-        width: 30px;
-    }
-}
 
 /* Modificación de Bootstrap */
 
@@ -456,8 +470,3 @@ footer a:hover{
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-
-
-
-
-
