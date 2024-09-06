@@ -144,7 +144,7 @@ header nav{
 /* Asociados */
 
 .asociados{
-    background-color: #e0a966;
+    background: linear-gradient(90deg, rgba(203,191,151,1) 0%, rgba(218,212,180,1) 59%, rgba(223,210,128,1) 85%);
     text-align: center;
     margin-bottom: 10px;
 }
@@ -174,7 +174,7 @@ footer img{
 }
 
 footer {
-    background-color: rgba(94, 94, 94, 0.682);
+    background: linear-gradient(0deg, rgba(190,184,184,1) 0%, rgba(94,94,94,1) 100%);
 }
 
 footer a{
@@ -457,6 +457,7 @@ footer a:hover{
 
 .navbar{
     font-family: Oswald;
+    background: linear-gradient(0deg, rgba(231,224,224,1) 0%, rgba(159,159,159,1) 100%);
 }
 
 .card{
